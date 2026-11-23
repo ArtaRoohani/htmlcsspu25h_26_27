@@ -1,0 +1,138 @@
+<!--
+Övning 10: Semantisk layout
+Uppgift: Skapa en komplett semantisk sidlayout med header, nav, main, aside och footer.
+-->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantisk Sidlayout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #448cff;
+            color: #ffffff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #334155;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content-container {
+            display: flex;
+            flex: 1;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        main {
+            flex: 3;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        aside {
+            flex: 1;
+            background: #e2e8f0;
+            padding: 2rem;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Webbplatsens Titel</h1>
+        <p>En undertitel eller slogan här</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Om oss</a></li>
+            <li><a href="#">Tjänster</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <main>
+            <article>
+                <h2>Huvudartikelns rubrik</h2>
+                <p>Detta är det primära innehållet på webbplatsen. Genom att använda taggen &lt;main&gt; talar du om för sökmotorer och skärmläsare exakt var sidans viktigaste information finns.</p>
+                <p>Här kan du lägga till text, bilder, formulär eller vad som helst som hör till just denna specifika sida.</p>
+            </article>
+        </main>
+        <aside>
+            <h3>Sidofält (Aside)</h3>
+            <p>Här placeras information som är relaterad till huvudinnehållet, men som inte är livsviktig. Exempelvis:</p>
+            <ul>
+                <li>Senaste inläggen</li>
+                <li>Användarprofiler</li>
+                <li>Annonser</li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2026 Mitt Företag. Alla rättigheter förbehållna.</p>
+    </footer>
+</body>
+</html>

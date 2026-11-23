@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "editor-browser",
+            "request": "launch",
+            "name": "Koed!!!",
+            "url": "file:///c%3A/Users/RoohaniArta/Downloads/HtmlCssOvn3-main/HtmlCssOvn3-main/koed/Koed1.html"
+        }
+    ]
+}

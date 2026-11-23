@@ -1,0 +1,73 @@
+<!--
+Övning 16: Skapa kod till en tabell med utsende under :
+![Alt text](/Assets/images/TableOvn.png)
+-->
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stilren Tabell</title>
+    <style>
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .custom-table th {
+            background-color: #3ec2ff;
+            color: white;
+            padding: 12px 15px;
+            font-weight: bold;
+        }
+        .custom-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dddddd;
+        }
+        .custom-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        .custom-table tbody tr:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Bananer...</th>
+                <th>Bananer!</th>
+                <th>Bananer?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bananer</td>
+                <td>Bananer</td>
+                <td>Bananer</td>
+            </tr>
+            <tr>
+                <td>Ja, bananer</td>
+                <td>nej, bananer</td>
+                <td>kanske bananer</td>
+            </tr>
+            <tr>
+                <td>Älskar bananer</td>
+                <td>Hatar bananer</td>
+                <td>Vad är bananer?</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

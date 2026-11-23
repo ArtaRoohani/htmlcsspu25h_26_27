@@ -1,0 +1,71 @@
+<!--
+Övning 15: Tabell med rowspan/colspan
+Uppgift: Skapa en tabell som använder rowspan och colspan för att sammanfoga celler.
+-->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-tabell med Rowspan och Colspan</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 2px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight-row {
+            background-color: #d1ecf1;
+        }
+        .highlight-col {
+            background-color: #d4edda;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Exempel på "något"</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Kategori</th>
+                <th>Produkt</th>
+                <th>Kvartal 1</th>
+                <th>Kvartal 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="highlight-row">Elektronik</td>
+                <td>Mobiltelefon</td>
+                <td>500 st</td>
+                <td>600 st</td>
+            </tr>
+            <tr>
+                <td>Dator</td>
+                <td>300 st</td>
+                <td>400 st</td>
+            </tr>
+            <tr>
+                <td>Kläder</td>
+                <td>Tröja</td>
+                <td>150 st</td>
+                <td>200 st</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="highlight-col"><strong>Total grejer</strong></td>
+                <td>2150 st</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
